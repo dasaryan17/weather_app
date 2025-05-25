@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personalized Weather App</title> <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="weather-app-container">
+        <h1>Global Weather Insights</h1> <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name, e.g., London" aria-label="City name input"> <button id="search-btn" aria-label="Search weather">Search</button> <button id="clear-btn" aria-label="Clear city input" class="clear-button">Clear</button>
+        </div>
+
+        <p id="loading-message" class="loading-message hidden">Fetching weather data...</p> <div id="weather-display" class="weather-display">
+            <p id="error-message" class="error-message"></p>
+
+            <h2 id="city-name"></h2>
+
+            <div class="weather-info">
+                <img id="weather-icon" src="" alt="Weather Icon" class="hidden"> 
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+                <p id="last-updated" class="last-updated hidden"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <p>&copy; 2025 My Weather App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
